@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script type="module">
+        import{stname,student} from "./module3.js";
+        let stu=stname[0];
+        let cllg=student.cllg;
+        document.getElementById("demo").innerHTML=`student name is ${stu} and cllg name is ${cllg}`;
+    </script>
+</body>
+</html>

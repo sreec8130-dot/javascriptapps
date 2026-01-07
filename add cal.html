@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add two numbers</title>
+</head>
+<body>
+    <h1 id="title">do........</h1>
+    <input type="number" id="num1" placeholder="enter first number"/>
+    <input type="number" id="num2" placeholder="enter second number"/>
+    <button onclick="addnumbers()">add</button>
+    <button onclick="mulnumbers()">mul</button>
+    <button onclick="subnumbers()">sub</button>
+    <button onclick="divnumbers()">div</button>
+    <button onclick="modnumbers()">mod</button>
+    
+    <p id="result"></p>
+    <script>
+        function addnumbers(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const sum =num1+num2;
+            document.getElementById("title").textContent="result:"+sum;
+        }
+        function mulnumbers(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const add =num1*num2;
+            document.getElementById("title").textContent="result:"+add;
+        }
+        function subnumbers(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const sub =num1-num2;
+            document.getElementById("title").textContent="result:"+sub;
+        }
+        function divnumbers(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const div =num1/num2;
+            document.getElementById("title").textContent="result:"+div;
+        }
+        function modnumbers(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const mod =num1%num2;
+            document.getElementById("title").textContent="result:"+mod;
+        }
+    </script>
+</body>
+</html>

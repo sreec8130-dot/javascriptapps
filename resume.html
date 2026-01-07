@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .resume {
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* HEADER */
+    .header {
+        text-align: center;
+        padding: 25px;
+        background: #1e1e1e;
+        color: white;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .header p {
+        margin: 5px 0;
+    }
+
+    /* GRID LAYOUT */
+    .content {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+
+    .left {
+        background: #f7f7f7;
+        padding: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    table th, table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+
+    table th {
+        background: #eaeaea;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>YOUR NAME</h1>
+        <p>Email: your@email.com | Phone: XXX-XXX-XXXX | City, Country</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- LEFT COLUMN -->
+        <div class="left">
+
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.Tech (CSE)</td>
+                    <td>University Name</td>
+                    <td>2020 – 2024</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary</td>
+                    <td>School Name</td>
+                    <td>2018 – 2020</td>
+                </tr>
+            </table>
+
+            <h2>Skills</h2>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Skills</th>
+                </tr>
+                <tr>
+                    <td>Technical</td>
+                    <td>HTML, CSS, JavaScript, Python</td>
+                </tr>
+                <tr>
+                    <td>Tools</td>
+                    <td>Git, VS Code, Linux</td>
+                </tr>
+                <tr>
+                    <td>Soft Skills</td>
+                    <td>Communication, Teamwork</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right">
+
+            <h2>Projects</h2>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Tech Stack</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>Personal responsive website showcasing projects</td>
+                    <td>HTML, CSS, JS</td>
+                </tr>
+                <tr>
+                    <td>Task Manager</td>
+                    <td>CRUD-based task management application</td>
+                    <td>React, Node.js</td>
+                </tr>
+                <tr>
+                    <td>Weather App</td>
+                    <td>Real-time weather using API</td>
+                    <td>JavaScript, API</td>
+                </tr>
+            </table>
+
+            <h2>Experience</h2>
+            <table>
+                <tr>
+                    <th>Role</th>
+                    <th>Organization</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Web Developer Intern</td>
+                    <td>Company Name</td>
+                    <td>3 Months</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
